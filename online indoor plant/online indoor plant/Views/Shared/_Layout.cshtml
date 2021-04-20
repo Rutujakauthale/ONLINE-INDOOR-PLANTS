@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - online_indoor_plant</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
+    <style>
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: green;
+            color:white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="~/image/logo.jpg" alt="" width="50" height="50">
+                </div>
+                <div class="col-8">
+                    <form class="search">
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                </div>
+                <div class="col-1">
+                    <p style="padding:15px;font-size:30px;"> <span class="glyphicon glyphicon-user"></span></p>
+
+                </div>
+                <div class="col-1">
+
+                    <p style="padding:15px;font-size:30px;"><span class="glyphicon glyphicon-shopping-cart"></span></p>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+
+            <a asp-area="" asp-controller="Home" asp-action="">ONLINE_INDOOR_PLANTS</a>
+            <a asp-area="" asp-controller="Home" asp-action="Home">Home</a>
+
+            <div class="dropdown">
+                <div class="dropdown-content">
+                    <a asp-area="" asp-controller="Home" asp-action="Fertilizer">Indoor Plant</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Fertilizer">Outdoor Plant</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Fertilizer">Link 3</a>
+                </div>
+            </div>
+            <a asp-area="" asp-controller="Home" asp-action="Fertilizer">Fertilizer</a>
+
+            <a asp-area="" asp-controller="Home" asp-action="Seeds">Seeds</a>
+
+
+            <a asp-area="" asp-controller="Home" asp-action="Sortby">Sortby</a>
+
+
+            <a asp-area="" asp-controller="Home" asp-action="Accessories">Accessories</a>
+
+
+           
+
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>About</h3>
+                        <p>
+                            Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus.
+                            Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar
+                            dictum vel in justo.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Find Us</h3>
+                        <p class="mb10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+                        <p><i class="fa fa-phone"></i>  +91-9999878398  </p>
+                        <p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+                    </div>
+                    <div class="col-md-3 item text">
+                        <h3>Subscribe</h3>
+                        <p>Stay update with our latest</p>
+                        <input type="Email" placeholder="Enter your Email">
+                    </div>
+                    <div class="col-md-3 item text">
+                        <h3>Company Name</h3>
+                        <p>
+                            Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus.
+                            Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar
+                            dictum vel in justo.
+                        </p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+
+            </div>
+            <div class="border-top footer text-muted" style="padding:10px;">
+                <div class="container">
+                    &copy; 2021 - online_indoor_plant - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
