@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\cognizant\\online indoor plant\\online indoor plant\\online indoor plant.csproj": {}
+    "C:\\Users\\Intel\\source\\repos\\ONLINE-INDOOR-PLANTS\\online indoor plant\\online indoor plant\\online indoor plant.csproj": {}
   },
   "projects": {
-    "E:\\cognizant\\online indoor plant\\online indoor plant\\online indoor plant.csproj": {
+    "C:\\Users\\Intel\\source\\repos\\ONLINE-INDOOR-PLANTS\\online indoor plant\\online indoor plant\\online indoor plant.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\cognizant\\online indoor plant\\online indoor plant\\online indoor plant.csproj",
+        "projectUniqueName": "C:\\Users\\Intel\\source\\repos\\ONLINE-INDOOR-PLANTS\\online indoor plant\\online indoor plant\\online indoor plant.csproj",
         "projectName": "online indoor plant",
-        "projectPath": "E:\\cognizant\\online indoor plant\\online indoor plant\\online indoor plant.csproj",
-        "packagesPath": "C:\\Users\\91985\\.nuget\\packages\\",
-        "outputPath": "E:\\cognizant\\online indoor plant\\online indoor plant\\obj\\",
+        "projectPath": "C:\\Users\\Intel\\source\\repos\\ONLINE-INDOOR-PLANTS\\online indoor plant\\online indoor plant\\online indoor plant.csproj",
+        "packagesPath": "C:\\Users\\Intel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Intel\\source\\repos\\ONLINE-INDOOR-PLANTS\\online indoor plant\\online indoor plant\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\91985\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Intel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
