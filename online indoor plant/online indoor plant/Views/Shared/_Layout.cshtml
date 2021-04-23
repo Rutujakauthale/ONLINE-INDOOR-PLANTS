@@ -36,7 +36,7 @@
                     </form>
                 </div>
                 <div class="col-1">
-                    <p style="padding:15px;font-size:30px;"> <span class="glyphicon glyphicon-user"></span></p>
+                    <p style="padding:15px;font-size:30px;" > <span class="glyphicon glyphicon-user" asp-controller="Registration" asp-action="Create"></span></p>
 
                 </div>
                 <div class="col-1">
@@ -47,16 +47,22 @@
         </div>
         <nav class="navbar">
 
-            <a asp-area="" asp-controller="Home" asp-action="">ONLINE_INDOOR_PLANTS</a>
+            <a asp-area="" asp-controller="Home" asp-action="Index">ONLINE_INDOOR_PLANTS</a>
             <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-
+            
+            
             <div class="dropdown">
-                <div class="dropdown-content">
-                    <a asp-area="" asp-controller="Home" asp-action="Fertilizer">Indoor Plant</a>
-                    <a asp-area="" asp-controller="Home" asp-action="Fertilizer">Outdoor Plant</a>
-                    <a asp-area="" asp-controller="Home" asp-action="Fertilizer">Link 3</a>
+                
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plants
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" asp-controller="Home" asp-action="IndoorPlants">IndoorPlants</a>
+                    <a class="dropdown-item" asp-controller="Home" asp-action="OutdoorPlants">OutdoorPlants</a>
+                    <a class="dropdown-item" asp-controller="Home" asp-action="MoneyPlants">MoneyPlants</a>
                 </div>
             </div>
+
             <a asp-area="" asp-controller="Home" asp-action="Fertilizer">Fertilizer</a>
 
             <a asp-area="" asp-controller="Home" asp-action="Seeds">Seeds</a>
@@ -68,7 +74,8 @@
             <a asp-area="" asp-controller="Home" asp-action="Accessories">Accessories</a>
 
 
-           
+            <a asp-area="" asp-controller="Registration" asp-action="Create">SIGN UP</a>
+
 
         </nav>
     </header>

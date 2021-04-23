@@ -22,6 +22,23 @@ namespace online_indoor_plant.Controllers
         {
             return View();
         }
+        public IActionResult Plants()
+        {
+            return View();
+        }
+        public IActionResult IndoorPlants()
+        {
+            return View();
+        }
+        public IActionResult OutdoorPlants()
+        {
+            return View();
+        }
+        public IActionResult MoneyPlants()
+        {
+            return View();
+        }
+        
         public IActionResult Fertilizer()
         {
             return View();
